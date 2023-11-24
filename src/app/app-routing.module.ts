@@ -39,13 +39,6 @@ const routes: Routes = [
     ),
   },
   {
-    path: 'final-testing',
-    loadChildren: () =>
-    import('./features/final-testing/final-testing.module').then(
-      m => m.FinalTestingModule
-    ),
-  },
-  {
     path: '**',
     redirectTo: 'home',
   },
