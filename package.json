@@ -1,5 +1,5 @@
 {
-  "name": "angular-authentication",
+  "name": "eumk",
   "version": "1.0.1",
   "scripts": {
     "postinstall": "husky install",
@@ -14,7 +14,7 @@
     "format:check": "prettier --check .",
     "format:write": "prettier --write .",
     "release": "standard-version",
-    "analyze": "npm run build:prod -- --stats-json --named-chunks && webpack-bundle-analyzer ./dist/angular-authentication/stats.json"
+    "analyze": "npm run build:prod -- --stats-json --named-chunks && webpack-bundle-analyzer ./dist/eumk/stats.json"
   },
   "private": true,
   "dependencies": {

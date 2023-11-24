@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-authentication": {
+    "eumk": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-authentication",
+            "outputPath": "dist/eumk",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -80,10 +80,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-authentication:build:production"
+              "browserTarget": "eumk:build:production"
             },
             "development": {
-              "browserTarget": "angular-authentication:build:development"
+              "browserTarget": "eumk:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -91,7 +91,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-authentication:build"
+            "browserTarget": "eumk:build"
           }
         },
         "test": {
@@ -109,7 +109,7 @@
       }
     }
   },
-  "defaultProject": "angular-authentication",
+  "defaultProject": "eumk",
   "cli": {
     "defaultCollection": "@angular-eslint/schematics",
     "cache": {
