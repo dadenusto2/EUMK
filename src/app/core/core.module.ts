@@ -8,8 +8,6 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 
 import { environment } from '../../environments/environment';
-import { AuthModule } from '../auth/auth.module';
-import { authInterceptorProviders } from '../auth/interceptors';
 
 @NgModule({
   imports: [
@@ -25,13 +23,8 @@ import { authInterceptorProviders } from '../auth/interceptors';
       ? []
       : StoreDevtoolsModule.instrument({ name: 'Angular Authentication' }),
 
-    // Application
-    AuthModule,
   ],
-  providers: [
-    // Interceptors
-    ...authInterceptorProviders,
-  ],
+  providers: [],
 })
 export class CoreModule {
   constructor(@Optional() @SkipSelf() parentModule: CoreModule) {

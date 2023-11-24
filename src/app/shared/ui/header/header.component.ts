@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-import { AuthFacade } from '../../../auth/store/auth.facade';
-
 @Component({
   selector: 'aa-header',
   templateUrl: './header.component.html',
@@ -13,11 +11,7 @@ export class HeaderComponent {
     { link: '/about', label: 'Об ЭУМК', icon: null },
     
   ];
-  authUser$ = this.authFacade.user$;
 
-  constructor(private authFacade: AuthFacade) {}
+  constructor() {}
 
-  logout() {
-    this.authFacade.logout();
-  }
 }

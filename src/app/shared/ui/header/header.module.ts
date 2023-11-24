@@ -10,7 +10,6 @@ import {
 } from '@taiga-ui/core';
 import { TuiAvatarModule } from '@taiga-ui/kit';
 
-import { IconModule } from '../icon/icon.module';
 import { HeaderComponent } from './header.component';
 
 @NgModule({
@@ -23,7 +22,6 @@ import { HeaderComponent } from './header.component';
     TuiAvatarModule,
     TuiSvgModule,
     TuiHintModule,
-    IconModule,
   ],
   declarations: [HeaderComponent],
   exports: [HeaderComponent],
