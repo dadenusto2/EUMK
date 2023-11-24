@@ -1,0 +1,47 @@
+// Import tailwindcss styles
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import './theme';
+
+a:link {
+    color: #000000;
+    border-bottom: 1px dashed;
+}
+
+a:visited {
+    color: #9340a3;
+}
+
+a:hover {
+    color: #154088;
+    border-bottom: .07em solid;
+}
+
+a:active {
+    color: #497DDD;
+    border-bottom: 1px dashed;
+}
+
+p {
+    font-size: small;
+    line-height: normal;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-collapse: collapse; 
+}
+.table th {
+    font-weight: bold;
+    padding: 5px;
+    background: #efefef;
+    border: 1px solid #dddddd;
+}
+.table td {
+    border: 1px solid #dddddd;
+    padding: 5px;
+}
